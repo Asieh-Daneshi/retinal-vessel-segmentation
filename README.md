@@ -1,5 +1,7 @@
 # Retinal vessel segmentation with a small U-Net
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-U--Net-EE4C2C?logo=pytorch&logoColor=white) ![Dice](https://img.shields.io/badge/test%20Dice-0.80-2ea44f) ![CPU](https://img.shields.io/badge/trains%20on-CPU%20in%2013%20min-lightgrey) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Data: CC BY 4.0](https://img.shields.io/badge/data-CHASE__DB1%20(CC%20BY%204.0)-blue)](https://researchinnovation.kingston.ac.uk/en/datasets/chasedb1-retinal-vessel-reference-dataset-4/)
+
 A compact PyTorch U-Net that segments blood vessels in colour fundus photographs from the public [CHASE_DB1](https://researchinnovation.kingston.ac.uk/en/datasets/chasedb1-retinal-vessel-reference-dataset-4/) dataset. It trains in about 13 minutes on a 2-core CPU, no GPU needed.
 
 The point of the project is less the architecture than the evaluation: a split by child (not by image), a threshold chosen on validation data only, a comparison with a second human annotator, calibration, and a look at where the model goes wrong.
